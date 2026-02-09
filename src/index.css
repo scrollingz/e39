@@ -6,80 +6,80 @@
 
 @layer base {
   :root {
-    --background: 230 15% 6%;
-    --foreground: 220 15% 93%;
+    --background: 0 10% 6%;
+    --foreground: 0 10% 93%;
 
-    --card: 230 14% 10%;
-    --card-foreground: 220 15% 93%;
+    --card: 0 10% 10%;
+    --card-foreground: 0 10% 93%;
 
-    --popover: 230 14% 10%;
-    --popover-foreground: 220 15% 93%;
+    --popover: 0 10% 10%;
+    --popover-foreground: 0 10% 93%;
 
-    --primary: 235 85% 65%;
+    --primary: 0 75% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 14% 14%;
-    --secondary-foreground: 220 15% 80%;
+    --secondary: 0 10% 14%;
+    --secondary-foreground: 0 10% 80%;
 
-    --muted: 230 12% 13%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 0 8% 13%;
+    --muted-foreground: 0 6% 45%;
 
-    --accent: 235 85% 65%;
+    --accent: 0 75% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 230 14% 15%;
-    --input: 230 14% 15%;
-    --ring: 235 85% 65%;
+    --border: 0 10% 15%;
+    --input: 0 10% 15%;
+    --ring: 0 75% 55%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 230 15% 6%;
-    --sidebar-foreground: 220 15% 93%;
-    --sidebar-primary: 235 85% 65%;
+    --sidebar-background: 0 10% 6%;
+    --sidebar-foreground: 0 10% 93%;
+    --sidebar-primary: 0 75% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 230 14% 14%;
-    --sidebar-accent-foreground: 220 15% 93%;
-    --sidebar-border: 230 14% 15%;
-    --sidebar-ring: 235 85% 65%;
+    --sidebar-accent: 0 10% 14%;
+    --sidebar-accent-foreground: 0 10% 93%;
+    --sidebar-border: 0 10% 15%;
+    --sidebar-ring: 0 75% 55%;
 
     /* Custom tokens */
-    --price-color: 145 65% 48%;
-    --stock-color: 220 10% 45%;
-    --card-glow: 235 85% 65%;
-    --surface-elevated: 230 14% 12%;
+    --price-color: 0 80% 60%;
+    --stock-color: 0 6% 45%;
+    --card-glow: 0 75% 55%;
+    --surface-elevated: 0 10% 12%;
   }
 
   .dark {
-    --background: 230 15% 6%;
-    --foreground: 220 15% 93%;
-    --card: 230 14% 10%;
-    --card-foreground: 220 15% 93%;
-    --popover: 230 14% 10%;
-    --popover-foreground: 220 15% 93%;
-    --primary: 235 85% 65%;
+    --background: 0 10% 6%;
+    --foreground: 0 10% 93%;
+    --card: 0 10% 10%;
+    --card-foreground: 0 10% 93%;
+    --popover: 0 10% 10%;
+    --popover-foreground: 0 10% 93%;
+    --primary: 0 75% 55%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 230 14% 14%;
-    --secondary-foreground: 220 15% 80%;
-    --muted: 230 12% 13%;
-    --muted-foreground: 220 10% 45%;
-    --accent: 235 85% 65%;
+    --secondary: 0 10% 14%;
+    --secondary-foreground: 0 10% 80%;
+    --muted: 0 8% 13%;
+    --muted-foreground: 0 6% 45%;
+    --accent: 0 75% 55%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 230 14% 15%;
-    --input: 230 14% 15%;
-    --ring: 235 85% 65%;
-    --sidebar-background: 230 15% 6%;
-    --sidebar-foreground: 220 15% 93%;
-    --sidebar-primary: 235 85% 65%;
+    --border: 0 10% 15%;
+    --input: 0 10% 15%;
+    --ring: 0 75% 55%;
+    --sidebar-background: 0 10% 6%;
+    --sidebar-foreground: 0 10% 93%;
+    --sidebar-primary: 0 75% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 230 14% 14%;
-    --sidebar-accent-foreground: 220 15% 93%;
-    --sidebar-border: 230 14% 15%;
-    --sidebar-ring: 235 85% 65%;
+    --sidebar-accent: 0 10% 14%;
+    --sidebar-accent-foreground: 0 10% 93%;
+    --sidebar-border: 0 10% 15%;
+    --sidebar-ring: 0 75% 55%;
   }
 }
 
@@ -100,27 +100,27 @@
   }
   
   .card-hover:hover {
-    border-color: hsl(235 85% 65% / 0.35);
-    box-shadow: 0 4px 24px hsl(235 85% 65% / 0.08), 0 0 0 1px hsl(235 85% 65% / 0.1);
+    border-color: hsl(0 75% 55% / 0.35);
+    box-shadow: 0 4px 24px hsl(0 75% 55% / 0.08), 0 0 0 1px hsl(0 75% 55% / 0.1);
     transform: translateY(-2px);
   }
   
   .hero-glow {
     background: radial-gradient(
       600px circle at 50% 0%,
-      hsl(235 85% 65% / 0.08) 0%,
+      hsl(0 75% 55% / 0.1) 0%,
       transparent 70%
     );
   }
 
   .btn-purchase {
-    background: linear-gradient(135deg, hsl(235 85% 60%) 0%, hsl(260 80% 58%) 100%);
+    background: linear-gradient(135deg, hsl(0 80% 50%) 0%, hsl(20 85% 52%) 100%);
     transition: all 0.2s ease;
   }
 
   .btn-purchase:hover {
-    background: linear-gradient(135deg, hsl(235 85% 65%) 0%, hsl(260 80% 63%) 100%);
-    box-shadow: 0 4px 16px hsl(235 85% 65% / 0.3);
+    background: linear-gradient(135deg, hsl(0 80% 55%) 0%, hsl(20 85% 57%) 100%);
+    box-shadow: 0 4px 16px hsl(0 75% 55% / 0.3);
   }
 
   .btn-purchase:active {
@@ -128,14 +128,14 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(220 15% 93%) 0%, hsl(235 85% 75%) 100%);
+    background: linear-gradient(135deg, hsl(0 10% 93%) 0%, hsl(0 80% 65%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .badge-glow {
-    background: linear-gradient(135deg, hsl(235 85% 60%) 0%, hsl(280 70% 55%) 100%);
-    box-shadow: 0 2px 8px hsl(235 85% 65% / 0.3);
+    background: linear-gradient(135deg, hsl(0 80% 50%) 0%, hsl(25 85% 50%) 100%);
+    box-shadow: 0 2px 8px hsl(0 75% 55% / 0.3);
   }
 }
