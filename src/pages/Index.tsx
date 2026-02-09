@@ -62,53 +62,57 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <StoreHeader />
 
-      <main className="mx-auto max-w-5xl px-4 py-10">
-        {/* Hero */}
-        <div className="mb-10 text-center">
-          <h1 className="text-3xl font-bold text-foreground tracking-tight sm:text-4xl">
-            E39 Store
-          </h1>
-          <p className="mt-2 text-muted-foreground max-w-md mx-auto">
-            Browse our digital products. Instant delivery after purchase.
-          </p>
-        </div>
+      {/* Hero glow effect */}
+      <div className="hero-glow">
+        <main className="mx-auto max-w-5xl px-6 py-14">
+          {/* Hero */}
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl font-extrabold text-gradient tracking-tight sm:text-5xl">
+              E39 Store
+            </h1>
+            <p className="mt-3 text-muted-foreground max-w-lg mx-auto text-base">
+              Premium Discord Nitro & Server Boosts. Instant delivery after purchase.
+            </p>
+          </div>
 
-        {/* Feature badges */}
-        <div className="flex flex-wrap justify-center gap-6 mb-10">
-          {features.map((f) => (
-            <div key={f.label} className="flex items-center gap-2 text-sm text-muted-foreground">
-              <f.icon className="h-4 w-4 text-primary" />
-              <div>
+          {/* Feature badges */}
+          <div className="flex flex-wrap justify-center gap-5 mb-12">
+            {features.map((f) => (
+              <div
+                key={f.label}
+                className="flex items-center gap-2.5 rounded-full border border-border/60 bg-secondary/50 px-4 py-2 text-sm"
+              >
+                <f.icon className="h-4 w-4 text-primary" />
                 <span className="font-medium text-foreground">{f.label}</span>
-                <span className="hidden sm:inline"> · {f.desc}</span>
+                <span className="hidden sm:inline text-muted-foreground">· {f.desc}</span>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Products grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
-            <ProductCard key={product.name} {...product} />
-          ))}
-        </div>
+          {/* Products grid */}
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {products.map((product) => (
+              <ProductCard key={product.name} {...product} />
+            ))}
+          </div>
 
-        {/* Footer */}
-        <footer className="mt-16 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <p>© 2025 E39 Store · All rights reserved</p>
-          <p className="mt-1">
-            Contact us on{" "}
-            <a
-              href="https://t.me/goopypoopyparty"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              Telegram
-            </a>
-          </p>
-        </footer>
-      </main>
+          {/* Footer */}
+          <footer className="mt-20 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
+            <p>© 2025 E39 Store · All rights reserved</p>
+            <p className="mt-1.5">
+              Contact us on{" "}
+              <a
+                href="https://t.me/goopypoopyparty"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium hover:underline"
+              >
+                Telegram
+              </a>
+            </p>
+          </footer>
+        </main>
+      </div>
     </div>
   );
 };
